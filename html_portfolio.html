@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            padding:50px;
+        }
+        .features li{
+            margin-bottom:10px
+        }
+    .contact form label,input{
+        margin-bottom: 20px;
+    }
+        #home{
+            position: fixed;
+        }
+        .features .image1{
+            margin-top: 25px;
+        }
+        .topics li{
+            margin-bottom: 10px;
+        }
+        .resources li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+      
+        .topics table th,td{
+            text-align: center;
+        }
+        .topics tbody tr:nth-child(odd){
+            background-color:#e4e1e1 ;
+        }
+       .topics tbody tr:nth-child(even){
+            background-color: rgb(187, 179, 179);
+        }
+        .topics thead tr{
+            background-color: rgb(187, 179, 179);
+        }
+
+        table th,td{
+            border: 1px solid grey;
+        }
+    </style>
+    <h1 style="text-align: center;">My HTML Portfolio</h1>
+    <hr>
+    <section style="display:flex;gap:40px;justify-content:center">
+        <a href="home">Home</a>
+        <a href="Featues">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#contact">Contact</a>
+    </section>
+    <hr>
+    <h1>About HTML</h1>
+    <hr>
+    <p>HTML stands for Hyper Text Markup Language.it is the standard language used to create web pages</p>
+    <section class="features" style="display:flex;justify-content:space-between">
+        <div style="width: 80%;">
+            <h1>Key Features of HTML</h1>
+            <hr>
+            <ul style="font-size: 20px;">
+                <li>Easy to Learn</li>
+                <li>Sematic Structure</li>
+                <li>Multimedia support</li>
+                <li>Forms and tables</li>
+            </ul>
+        </div>
+        <div class="image1" style="width:300px;height:200px;">
+            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width: 100%;height:100%;" alt=""><figcaption>Laptop and coffee</figcaption>
+        </div>
+    </section>
+    <section class="topics">
+        <h1>HTML Topics Covered</h1>
+        <hr>
+        <div style="display: flex;justify-content:space-between">
+            <ol style="font-size: 20px;">
+                <li>Headings & Sections</li>
+                <li>Lists and Tables</li>
+                <li>Forms and inputs</li>
+                <li>Media Embeds</li>
+            </ol>
+            <div style="width:500px;height:210px">
+                <h2 style="padding:10px 10px 10px 10px;margin:0;background-color: rgb(147, 145, 145);color:black;border:2px solid rgb(215, 207, 207)">Project Timeline</h2>
+                
+                    <table style="border:2px solid rgb(215,207,207);border-collapse:collapse;margin-top:5px;width:100%;height:170px">
+                        <thead style="text-align: center;">
+                            <tr style="text-align: center;">
+                                <th>Phase</th>
+                                <th>Taks</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>planning</td>
+                                <td>Reasearch & Outline</td>
+                                <td>1 Week</td>
+                            </tr>
+                            <tr>
+                                <td>Development</td>
+                                <td>Coding Content</td>
+                                <td>2 Weeks</td>
+                            </tr>
+                            <tr>
+                                <td>Review</td>
+                                <td>Testing & Fixes</td>
+                                <td>3 Days</td>
+                            </tr>
+                        </tbody>
+                    </table>
+             
+            </div>
+        </div>
+        
+    </section>
+    <section class="resources" style="margin-top: 0;">
+        <h1>Resources</h1>
+        <hr>
+        <ul style="font-size: 20px;">
+            <li><a href="">MDN Web Docs</a><span>- HTML Guide</span></li>
+            <caption >comprehensive HTML reference</caption>
+             <li><a href="">W3Schools</a><span>- HTML Tutorial</span></li>
+            <caption>Learn HTML basics</caption>
+        </ul>
+
+    </section>
+    <section class="demo">
+        <h1>Demo Video</h1>
+        <hr>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/1pcikNlDB-4?si=n5YPxe-03AyjbtCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <hr>
+        <div>
+            <form action="">
+                <label for="name">Name:
+                    <input name="name" type="text">
+
+                </label><br>
+                <label for="Email">Email:
+                    <input type="email">
+                </label><br>
+                <label for="message">Message:
+                    <textarea name="message" id=""></textarea>
+                </label><br>
+                <label for="subscribe">Subscribe to Newsletter?
+                    <input type="checkbox" name="subscribe" value="yes">yes
+                    <input type="checkbox" name="subscribe" value="yes">no
+                </label><br>
+                <label for="phone">
+                    prefered contact :
+                    <input type="checkbox" name="phone">Email
+                    <input type="checkbox" name="phone">phone
+                </label><br>
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+    <hr>
+    <div style="display: flex;gap:20px;justify-content:center">
+        <p>©2024 My HTML Portfolio</p>
+        <p>|</p>
+        <p><a href="">contact@example.com</a></p>
+        <p>|</p>
+        <p>Location:Hyderabad , TS</p>
+    </div>
+</body>
+</html>
